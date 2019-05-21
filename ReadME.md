@@ -1,4 +1,4 @@
-# Book Genre Classification Using Naive Bayes Algorithm
+# Book Genre Classification
 >Simple python project using Django Framework for book classification by book title.
  In this project, the book will clasified using Naive Bayes and SVM algorithm.
 
