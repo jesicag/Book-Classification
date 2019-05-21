@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Book Category Classification</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="/static/bootstrap-reboot.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/js/bootstrap.bundle.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container" style="padding: 50px;">
+        <!--<div class=="row">-->
+            <div class="col-sm-12">
+                <h4><b>Book Category Classification</b></h4>
+                <p class="text-info">using Naive Bayes Algorithm</p>
+                <hr>
+            </div>
+
+        <label class="col-sm-12">Insert The Book's Title</label><br>
+
+            <div class="col-sm-12">
+                <form  class="form-inline d-flex" action="TextClassification/" method="post">
+                    {% csrf_token %}
+                    <textarea class="form-control col-sm-10" row="10" name="input_text" placeholder="Enter the book title here..." required></textarea>
+            </div>
+
+            <div class="col-sm-12" style="padding-bottom:180px;"><br>
+                <button type="text" class="btn btn-info"> Process Category </button>
+                </form>
+            </div><hr>
+       <div>
+           <b><a href="/">Home</a> | <a href="/SVM">SVM</a></b>
+           <br>&copy; NLP - Kelompok 7 | 2018
+       </div>
+    </div>
+        <!--action="/TextClassification/Classification/"-->
+</body>
+
+</html>
